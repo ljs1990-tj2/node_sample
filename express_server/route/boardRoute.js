@@ -11,7 +11,7 @@ router.route("/")
                     return;
                 }
                 res.render('board', { list : results }); 
-            });
+            }); 
         })
         .post((req, res) => {
             var {boardNo, title, contents} = req.body;
