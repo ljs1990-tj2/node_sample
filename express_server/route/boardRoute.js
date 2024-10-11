@@ -7,7 +7,7 @@ router.route("/")
             connection.query(query, (err, results) => {
                 if (err) {
                     console.error('쿼리 실행 실패:', err);
-                    res.status(500).send('서버 오류');
+                    // res.status(500).send('서버 오류');
                     return;
                 }
                 res.render('board', { list : results }); 
